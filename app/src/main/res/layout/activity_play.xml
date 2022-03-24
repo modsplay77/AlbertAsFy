@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/caja"
+    android:background="@drawable/banner"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:text="@string/app_name"
+        android:background="@color/white"
+
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/icono"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:background="@drawable/avatar" />
+
+    <LinearLayout
+        android:id="@+id/controles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icono"
+        android:layout_marginTop="10sp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4"
+
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/play"
+            android:enabled="true"
+
+
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <Button
+            android:id="@+id/Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:background="@drawable/pause"
+
+            app:cornerRadius="20dp"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:background="@drawable/stop"
+            app:cornerRadius="20dp"
+
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <Button
+            android:id="@+id/shuffle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:background="@drawable/shufle"
+
+            android:showAsAction="always"
+
+            app:cornerRadius="20dp"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AlbertAsFy</string>
+    <string name="user">Introduce tu usuario</string>
+    <string name="pwd">Introduce el password</string>
+    <string name="go">ENVIAR</string>
+    <string name="play">Play</string>
+    <string name="pause">Puse</string>
+    <string name="stop">Stop</string>
+    <string name="Randown">Randown</string>
+    <string name="Siguiente">Siguiente</string>
+</resources>
